@@ -41,8 +41,8 @@ class Norm(nn.Module):
     def __init__(self, eps: float = 10**-6): 
         super().__init__()
         self.epsilon = eps
-        self.alpha = nn.Parameter(torch.ones(1)) #Multiplicative
-        self.beta = nn.Parameter(torch.zeros(1)) #Additive
+        self.alpha = nn.Parameter(torch.ones(1)) # Multiplicative
+        self.beta = nn.Parameter(torch.zeros(1)) # Additive
 
         
     def forward(self, x): 
